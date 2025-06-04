@@ -1,0 +1,6 @@
+export const BUNDLED_SHIRT_ASSETS = {
+	pink_cowboy_hat: {
+		preview: require('../../../assets/birdimage/hats/pink_cowboy_hat.png'),
+		hat: require('../../../assets/birdimage/hats/pink_cowboy_hat.png'),
+	}
+}

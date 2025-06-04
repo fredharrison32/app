@@ -1,0 +1,47 @@
+shopItems: [
+	id: owl
+	name: Owl
+	type: bird
+	source: bundled
+	price: 1000
+	rarity: legendary
+	bundleKey: Owl
+	layers: ["body, beak, feet, Rwing, Lwing, eyes, eyes_shut, preview"]
+	
+	id: base
+	Name:Base bird
+	type: bird
+	source: bundled
+	price: 500
+	rarity: rare
+	bundleKey: base
+	layers: ["body, beak, feet, Rwing, Lwing, eyes, eyes_shut, preview"]
+
+	id: pink_shirt
+	name: Pink Shirt
+	type: shirt
+	source: bundled
+	price: 700
+	rarity: epic
+	bundleKey: pink 
+	layers: ["shirt_body, base_left_sleeve, base_right_sleeve, owl_left_sleeve, owl_right_sleeve, preview"]
+	
+	id: blue_shirt
+	name: Blue Shirt
+	type: shirt
+	source: bundled
+	price: 300
+	rarity: common
+	bundleKey: blue 
+	layers: ["shirt_body, base_left_sleeve, base_right_sleeve, owl_left_sleeve, owl_right_sleeve, preview"]
+
+	id: pink_cowbot_hat
+	name: Pink Cowboy Hat
+	type: hat
+	source: bundled
+	price: 500
+	rarity: rare
+	bundleKey: hats
+	layers: ["hat, preview"]
+	
+]

@@ -1,0 +1,19 @@
+export const BUNDLED_SHIRT_ASSETS = {
+	pink_shirt: {
+		preview: require('../../../assets/birdimage/shirts/pink/pink_shirt_preview.png'),
+		shirt_body: require('../../../assets/birdimage/shirts/pink/pink_shirt_body.png'),
+		base_left_sleeve: require('../../../assets/birdimage/shirts/pink/pink_left_sleeve.png'),
+		base_right_sleeve: require('../../../assets/birdimage/shirts/pink/pink_right_sleeve.png'),
+		owl_left_sleeve: require('../../../assets/birdimage/shirts/pink/pink_owl_left_sleeve.png'),
+		owl_right_sleeve: require('../../../assets/birdimage/shirts/pink/pink_owl_right_sleeve.png'),
+	}
+	
+	blue_shirt: {
+		preview: require('../../../assets/birdimage/shirts/blue/blue_shirt_preview.png'),
+		shirt_body: require('../../../assets/birdimage/shirts/blue/blue_shirt_body.png'),
+		base_left_sleeve: require('../../../assets/birdimage/shirts/blue/blue_base_left_sleeve.png'),
+		base_right_sleeve: require('../../../assets/birdimage/shirts/blue/blue_base_right_sleeve.png'),
+		owl_left_sleeve: require('../../../assets/birdimage/shirts/blue/blue_owl_left_sleeve.png'),
+		owl_right_sleeve: require('../../../assets/birdimage/shirts/blue/blue_owl_right_sleeve.png'),
+	}
+}
