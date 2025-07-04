@@ -35,7 +35,7 @@ class FocusVpnService : VpnService() {
             // Start foreground service
             startForeground(1, buildFocusNotification(this))
 
-            // 🔧 Build VPN — only route DNS servers
+            // Build VPN — only route DNS servers
             val builder = Builder()
                 .addAddress("10.0.0.2", 32) // Local virtual address
                 .addDnsServer("8.8.8.8") // DNS server used for forwarding (when not blocked)
@@ -101,7 +101,7 @@ class FocusVpnService : VpnService() {
                             Log.d("FocusVPN", "DNS query: $domain")
                             // if domain is blocked, drop it
                             if (domain != null && blockedDomains.contains(domain)) {
-                                Log.d("FocusVPN", "❌ Blocked DNS request to $domain")
+                                Log.d("FocusVPN", "Blocked DNS request to $domain")
                                 continue
                             }
 
@@ -110,7 +110,7 @@ class FocusVpnService : VpnService() {
                             if (response != null) {
                                 output.write(response)
                                 output.flush()
-                                Log.d("FocusVPN", "✅ Forwarded DNS for $domain")
+                                Log.d("FocusVPN", "Forwarded DNS for $domain")
                             }
 
                         } catch (e: Exception) {
@@ -124,7 +124,7 @@ class FocusVpnService : VpnService() {
 
             prefs.edit().putBoolean("focus_active", true).apply()
 
-            // 🔔 End session after duration
+            // End session after duration
             val stopAfterMillis = duration * 60 * 1000L
             Handler(Looper.getMainLooper()).postDelayed({
                 Log.d("FocusService", "Focus session ended after $duration minutes")
